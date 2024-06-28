@@ -1,0 +1,22 @@
+ // Use a TDD approach to making sure code behaves as expected
+
+let r1 : int = test1(0)
+// This tests looping, empty, head, tail and list creation from cons
+function test1 (x : int) : int
+{
+    let i : int = 0
+    let l : list = list[18,10,69]
+    let h : int = 2
+    output h
+    l := h :: l
+
+    while (!l empty) {
+        h := l hd
+        output h
+        l := l tl
+    }
+
+    // just return 0
+    return i
+}
+
